@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: test the code 
-        run: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: run the command
         run: apt install update -y 
