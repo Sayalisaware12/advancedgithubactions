@@ -10,4 +10,11 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
       - name: print hello
-        run: echo "Hello Github Actions"
+        run: echo "Hello Github Actions" 
+  test:
+     runs-on: ubuntu-latest
+     steps: 
+       - name: test the code 
+         run: actions/checkout@v3
+       - name: run the command
+         run: apt install update -y 
