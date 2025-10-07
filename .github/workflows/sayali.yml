@@ -3,16 +3,16 @@ on:
  pull_request: 
    types: [ opened,sychronized,reopened]
 jobs:
-   check-pr:
-     runs-on: ubuntu-latest
-     steps:
-       - name: checkout code from marketplace
-         uses: actions/checkout@v4
-       - name: print the pr inform
-         run: | 
-              echo "PR is created by ${{ github.actor }}"
-              echo "PR was created in repo ${{ github.repository }}
-              echo "PR event name is ${{ github.event_name }} 
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code from marketplace
+        uses: actions/checkout@v4
+      - name: print the pr inform
+        run: | 
+          echo "PR is created by ${{ github.actor }}"
+          echo "PR was created in repo ${{ github.repository }}
+          echo "PR event name is ${{ github.event_name }} 
               
             
    
