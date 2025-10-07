@@ -10,9 +10,9 @@ jobs:
         uses: actions/checkout@v4
       - name: print the pr inform
         run: | 
-             echo "PR is created by ${{ github.actor }}"
-             echo "PR was created in repo ${{ github.repository }}
-             echo "PR event name is ${{ github.event_name }} 
+          echo "PR is created by ${{ github.actor }}"
+          echo "PR was created in repo ${{ github.repository }}
+          echo "PR event name is ${{ github.event_name }} 
               
             
    
